@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+<!--         
+        <h1>If condition</h1>
+
+        {% if a > 15 %}
+
+            <h1>{{a}}</h1>
+
+        {% endif %} 
+
+
+        <h1>if-else</h1>
+         
+
+        {% if a > b %}
+        <h1>if block </h1>
+            <h1> a is max {{a}} </h1>
+        {% else %}
+          <h1>else block</h1>
+          
+          <h1> b is max {{b}} </h1>
+        {% endif %}
+
+    <h1>if-elif</h1>
+      {% if a > b and a > c %}
+        <h1>if block</h1>
+        <h1> a is max {{a}} </h1>
+      {% elif b > c %}
+        <h1>elif block</h1>
+        <h1> b is max {{b}} </h1>
+      {% else %}
+        <h1>else block</h1>
+        <h1> c is max {{c}} </h1>
+      {% endif %}
+
+    -->
+
+    <h1>nested if</h1>
+      {% if a > b %}
+            {% if a > c %}
+              <h1> a iss max {{a}} </h1>
+            {% else %}
+              <h1> c is max {{c}} </h1>
+            {% endif %}
+       {% else %}
+          {% if b > c %}
+              <h1> b is max {{b}} </h1>
+          {% else %}
+             <h1> c is max {{c}} </h1>
+          {% endif %}
+        {% endif %}
+            
+        
+    </center>
+</body>
+</html>
